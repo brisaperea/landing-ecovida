@@ -8,89 +8,101 @@
  
 <body>
 
-  <header>
-    <h1>EcoVida</h1>
-    <nav>
-      <ul>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#Ranking">Comparativa</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <h1>EcoVida</h1>
+  <nav>
+    <ul>
+      <li><a href="#productos">Productos</a></li>
+      <li><a href="#Ranking">Comparativa</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <main>
-    <section id="hero">
-      <img src="Images/Logo.png">
-      <h2>Vive en armonía con el planeta</h2>
+<main>
+  <section id="hero">
+    <img src="Images/Logo.png">
+    <h2>Vive en armonía con el planeta</h2>
+  </section>
+
+  <section id="productos">
+    <article class="producto">
+      <img src="Images/producto_1.png">
+      <h3>Shampoo natural</h3>
+      <p>Hecho con ingredientes biodegradables.</p>
+      <button>Más info</button>
+    </article>
+
+    <article class="producto">
+      <img src="Images/producto_2.png">
+      <h3>Bolsa reutilizable</h3>
+      <p>Resistente y libre de plástico.</p>
+      <button>Más info</button>
+    </article>
+
+    <article class="producto">
+      <img src="Images/producto_3.png">
+      <h3>Jabón orgánico</h3>
+      <p>100% vegano y natural</p>
+      <button>Más info</button>
+    </article>
+  </section>
+
+  <section id="Ranking">
+    <table>
+      <caption>Ranking de productos más vendidos </caption>
+      <thead>
+        <tr>
+          <th><em>Producto</em></th>
+          <th><em>2024</em></th>
+          <th><em>2025</em></th>
+        </tr>
+      </thead>
+      
+      <tbody>
+        <tr>
+          <td>Shampoo natural</td>
+          <td>5</td>
+          <td>10</td>
+          </tr>
+        <tr>
+          <td>Bolsa reutilizable</td>
+          <td>8</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>Jabón orgánico</td>
+          <td>10</td>
+          <td>4</td>
+        </tr>
+      </tbody>
+    </table>
     </section>
 
-    <section id="productos">
-      <article class="producto">
-        <img src="Images/producto_1.png">
-        <h3>Shampoo natural</h3>
-        <p>Hecho con ingredientes biodegradables.</p>
-        <button>Más info</button>
-      </article>
-      <article class="producto">
-        <img src="Images/producto_2.png">
-        <h3>Bolsa reutilizable</h3>
-        <p>Resistente y libre de plástico.</p>
-        <button>Más info</button>
-      </article>
-      <article class="producto">
-        <img src="Images/producto_3.png">
-        <h3>Jabón orgánico</h3>
-        <p>100% vegano y natural</p>
-        <button>Más info</button>
-      </article>
-    </section>
+  <section id="contacto">
+    <form>
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" placeholder="Tu nombre" required />
 
-    <section id="Ranking">
-      <table>
-        <caption>Ranking de productos más vendidos </caption>
-        <thead>
-          <tr>
-            <th><em>Producto</em></th>
-            <th><em>2024</em></th>
-            <th><em>2025</em></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Shampoo natural</td>
-            <td>5</td>
-            <td>10</td>
-          </tr>
-          <tr>
-            <td>Bolsa reutilizable</td>
-            <td>8</td>
-            <td>6</td>
-          </tr>
-          <tr>
-            <td>Jabón orgánico</td>
-            <td>10</td>
-            <td>4</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+      <label for="correo">Correo</label>
+      <input type="email" id="correo" placeholder="correo@email.com" required />
 
-    <section id="contacto">
-      <form>
-        <label for="nombre">Nombre</label>
-        <input type="text" id="nombre" placeholder="Tu nombre" required />
-
-        <label for="correo">Correo</label>
-        <input type="email" id="correo" placeholder="correo@email.com" required />
-
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" placeholder="Escribe tu mensaje" required></textarea>
 
         <button type="submit">Enviar</button>
-      </form>
-    </section>
+    </form>
+  </section>
   </main>
+   <section class="redes">
+    <h2><em>Síguenos en redes sociales</em></h2>
+    <p>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Behance</a>
+    </p>
+  </section>
 
   <footer>
     <p>Creado por EcoVida © 2025 - Todos los derechos reservados.</p>
